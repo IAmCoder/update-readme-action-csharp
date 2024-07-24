@@ -5,5 +5,5 @@ var filePath = args[0];
 if (!File.Exists(filePath)) throw new FileNotFoundException($"Cannot find file {filePath} to edit.");
 
 var text = File.ReadAllText(filePath);
-text += "\r\nActioned.";
+text += $"\r\n{DateTime.Now.ToString()}";
 File.WriteAllText(filePath, text);
