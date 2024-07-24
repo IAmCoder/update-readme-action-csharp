@@ -77,3 +77,5 @@ Let say we want to add links from other source (e.g. [dev.to](https://dev.to/)) 
 1. Create a content loader class that implements `IContentLoader`
 2. Add new entry in `ContentLoaderFactory.GetContentLoader()`
 3. Add new marker tags into your `README.md`
+
+Actioned.
